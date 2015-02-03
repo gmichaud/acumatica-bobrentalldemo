@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Bob Rent All</h1>
+    <p class="lead">Welcome to our extranet!</p>
+    <p><a href="http://www.acumatica.com" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Adding a tool for rental</h2>
+        <p>
+            You may use this site to add a tool to our rental catalog.
+        </p>
+        <p>@Html.ActionLink("Click Here", "Index", "AddTool", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>

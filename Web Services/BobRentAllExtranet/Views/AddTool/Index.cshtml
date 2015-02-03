@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Add Tool";
+}
+
+@model BobRentAllExtranet.Models.Tool
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>New Tool</h2>
+        <p>
+            Please enter the required information below.
+        </p>
+        <p>
+            @using(Html.BeginForm("Save", "AddTool", FormMethod.Post))
+            {
+                @Html.ValidationSummary(true)
+                <fieldset>
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.ToolCode)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(m => m.ToolCode) 
+                        @Html.ValidationMessageFor(m => m.ToolCode)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.Description)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(m => m.Description)
+                        @Html.ValidationMessageFor(m => m.Description)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.Cost)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(m => m.Cost)
+                        @Html.ValidationMessageFor(m => m.Cost)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(m => m.SerialNumber)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(m => m.SerialNumber)
+                        @Html.ValidationMessageFor(m => m.SerialNumber)
+                    </div>
+
+                    <p>
+                        <input type="submit" value="Save" />
+                    </p>
+                </fieldset>
+            }
+        </p>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sm:SiteMap xmlns:sm="http://acumatica.com/mobilesitemap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <sm:Screen Id="SO391000" Type="SimpleScreen" Icon="system://Albums" DisplayName="Tools" Visible="true" >
+        <sm:Container Name="Tools" FieldsToShow="1">
+            <sm:Attachments Disabled="true">
+            </sm:Attachments>
+            <sm:Field Name="Description" />
+            <sm:Field Name="Cost" />
+            <sm:Field Name="SerialNumber" />
+            <sm:Action Name="Save" Context="Record" Behavior="Save" />
+            <sm:Action Name="Cancel" Context="Record" Behavior="Cancel" />
+        </sm:Container>
+    </sm:Screen>  	
+</sm:SiteMap>

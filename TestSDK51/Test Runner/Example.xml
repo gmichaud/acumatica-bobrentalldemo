@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns="http://tempuri.org/XMLSchema2.xsd">
+	<general>
+	<browser>*firefox</browser>
+	<site_dst>
+  		<rmhost/>
+  		<url>http://qa16/site</url>
+  		<login>admin</login>
+  		<pswd>123</pswd>
+  		<lang>English</lang>
+  		<cmpid/>
+	</site_dst>
+	<selenium_server>
+  		<host>qa16</host>
+  		<port>4444</port>
+	</selenium_server>
+	<screenshots Active="true">
+  		<screenshots_folder>c:\pic</screenshots_folder>
+	</screenshots>
+</general>
+	<testing>			
+		<Check Name="Test"/>
+	</testing>
+</config>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns="http://tempuri.org/XMLSchema2.xsd">
+	<general>
+	<browser>*firefox</browser>
+	<site_dst>
+  		<rmhost/>
+  		<url>http://localhost/BobRentAll</url>
+  		<login>admin</login>
+  		<pswd>admin</pswd>
+  		<lang>English</lang>
+  		<cmpid/>
+	</site_dst>
+	<selenium_server>
+  		<host>localhost</host>
+  		<port>4444</port>
+	</selenium_server>
+	<screenshots Active="true">
+  		<screenshots_folder>Screenshots</screenshots_folder>
+	</screenshots>
+</general>
+	<testing>			
+		<Check Name="Test"/>
+	</testing>
+</config>
