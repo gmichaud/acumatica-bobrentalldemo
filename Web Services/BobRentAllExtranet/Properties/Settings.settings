@@ -1,9 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BobRentAllExtranet.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles />
-  <Settings>
-    <Setting Name="BobRentAllExtranet_VX301000_Screen" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://10.211.55.10/BobRentAll/Soap/VX301000.asmx</Value>
-    </Setting>
-  </Settings>
+  <Settings />
 </SettingsFile>

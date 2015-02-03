@@ -22,15 +22,5 @@ namespace BobRentAllExtranet.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://10.211.55.10/BobRentAll/Soap/VX301000.asmx")]
-        public string BobRentAllExtranet_VX301000_Screen {
-            get {
-                return ((string)(this["BobRentAllExtranet_VX301000_Screen"]));
-            }
-        }
     }
 }
