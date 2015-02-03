@@ -1,0 +1,30 @@
+	    var toolManagement = new SO391000.Screen();
+            toolManagement.CookieContainer = new System.Net.CookieContainer();
+            toolManagement.Login("admin@RevisionTwo", "admin");
+
+            var schema = toolManagement.GetSchema();
+            
+            Console.Write("Code: ");
+            string code = Console.ReadLine();
+
+            Console.Write("Description: ");
+            string description = Console.ReadLine();
+
+            Console.Write("Cost: ");
+            decimal cost = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Serial Number: ");
+            string serial = Console.ReadLine();
+
+            var commands = new SO391000.Command[] {
+                new SO391000.Value() { LinkedCommand = schema.Tools.ToolCode, Value = code },
+                new SO391000.Value() { LinkedCommand = schema.Tools.Description, Value = description },
+                new SO391000.Value() { LinkedCommand = schema.Tools.Cost, Value = cost.ToString(System.Globalization.CultureInfo.InvariantCulture) },
+                new SO391000.Value() { LinkedCommand = schema.Tools.SerialNumber, Value = serial },
+                schema.Actions.Save
+            };
+
+            toolManagement.Submit(commands);
+
+            Console.WriteLine("Your tool has been added. Press any key to exit.");
+            Console.ReadKey();

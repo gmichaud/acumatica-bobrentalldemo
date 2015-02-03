@@ -1,0 +1,18 @@
+	private void AddToolToAcumatica(string code, string description, decimal cost, string serialNumber)
+        {
+            var toolManagement = new VX301000.Screen();
+            toolManagement.CookieContainer = new System.Net.CookieContainer();
+            toolManagement.Login("admin", "admin");
+
+            var schema = toolManagement.GetSchema();
+
+            var commands = new VX301000.Command[] {
+                new VX301000.Value() { LinkedCommand = schema.Tools.ToolCode, Value = code },
+                new VX301000.Value() { LinkedCommand = schema.Tools.Description, Value = description },
+                new VX301000.Value() { LinkedCommand = schema.Tools.Cost, Value = cost.ToString(System.Globalization.CultureInfo.InvariantCulture) },
+                new VX301000.Value() { LinkedCommand = schema.Tools.SerialNumber, Value = serialNumber },
+                schema.Actions.Save
+            };
+
+            toolManagement.Submit(commands);
+        }
