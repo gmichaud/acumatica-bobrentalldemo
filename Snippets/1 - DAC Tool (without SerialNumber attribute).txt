@@ -15,7 +15,6 @@ namespace Velixo.ToolRental
 
         public abstract class description : PX.Data.IBqlField { }
         [PXDBString(50, IsUnicode = true)]
-        [PXDefault]
         [PXUIField(DisplayName = "Description", Visibility=PXUIVisibility.SelectorVisible)]
         public virtual string Description { get; set; }
 

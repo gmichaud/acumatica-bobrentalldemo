@@ -2,7 +2,7 @@
 CREATE TABLE [dbo].[Tool](
 	[CompanyID] [int] NOT NULL,
 	[ToolCD] [nvarchar](30) NOT NULL,
-	[Description] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](50) NULL,
 	[Cost] [decimal](19,2) NULL,
 	[SerialNumber] [nvarchar](50) NULL,
 	[NoteID] [uniqueidentifier] NULL,
